@@ -53,5 +53,9 @@ func main() {
 	rproxy.HTTP.CreateOrUpdateRule("/r1", "http://localhost:8000")
 	rproxy.HTTP.CreateOrUpdateRule("/r2", "http://localhost:8001")
 	rproxy.GRPC.CreateOrUpdateRule("/proto.TestService", "localhost:8002", true)
-	rproxy.Run(":8088")
+	l, err := net.Listen("tcp", ":8088")
+	if err != nil {
+		panic(err)
+	}
+	rproxy.Run(l)
 }

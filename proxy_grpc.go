@@ -109,9 +109,9 @@ func getGRPCProxyServerOptions() []grpc.ServerOption {
 				}
 				conn, err := grpc.DialContext(outCtx, dst, dialOpts...)
 				return outCtx, conn, err
-			} else {
-				log.Printf("GRPC call[%s] no rules found", fullMethodName)
 			}
+			log.Printf("GRPC call[%s] no rules found", fullMethodName)
+			
 		}
 		return nil, nil, grpc.Errorf(codes.Unimplemented, "Unknown method")
 	}
