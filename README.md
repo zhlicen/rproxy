@@ -1,6 +1,6 @@
 # rproxy
 
-rproxy supports transparent proxy for multiple protocols(HTTP1.*/gRPC/gRPC-Web) with single port
+rproxy supports transparent reverse proxy for multiple protocols(HTTP1.*/gRPC/gRPC-Web) with single entry port
 
 ## Protocols
 
