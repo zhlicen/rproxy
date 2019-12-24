@@ -22,7 +22,7 @@ rproxy use the following package:
 
 | package                                                                  | desc                                      |
 | ------------------------------------------------------------------------ | ----------------------------------------- |
-| [cmux](https://github.com/soheilhy/cmux  )                                       | serve different services on the same port |
+| [soheilhy/cmux](https://github.com/soheilhy/cmux  )                                       | serve different services on the same port |
 | [improbable-eng/grpc-web](https://github.com/improbable-eng/grpc-web/go/grpcweb) | in process grpc-web wrapper               |
-| [proxy](https://github.com/mwitkow/grpc-proxy/proxy)                             | gRPC reverse proxy                        |
+| [mwitkow/grpc-proxy](https://github.com/mwitkow/grpc-proxy)                             | gRPC reverse proxy                        |
 
